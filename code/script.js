@@ -50,6 +50,9 @@ switch(foodChoice) {
   case 3:
     foodChoice = "Burger";
     break;
+  default:
+    alert("Something went wrong in the pizzeria. Please refresh and try again.");
+    break;
 }
 
 alert(`You've chosen ${foodChoice.toLowerCase()}!`)
@@ -97,6 +100,9 @@ switch (foodChoice) {
     break;
   case "Burger":
     subChoice = chooseSubtype("Cheese", "Double cheese", "Triple cheese");
+    break;
+  default:
+    alert("Something went wrong in the pizzeria. Please refresh and try again.");
     break;
 };
 
@@ -148,5 +154,8 @@ switch(userConfirmation) {
     break;
   case 2:
     alert("Order has been canceled. Have a nice day!");
+    break;
+  default:
+    alert("Something went wrong in the pizzeria. Please refresh and try again.");
     break;
 };
